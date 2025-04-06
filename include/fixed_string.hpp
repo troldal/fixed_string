@@ -514,8 +514,8 @@ template <typename TChar, typename TTraits, size_t N>
 
 #endif // FIXSTR_CPP20_SPACESHIP_OPERATOR_PRESENT
 
-template <typename TChar, size_t N>
-basic_fixed_string(const TChar (&)[N]) -> basic_fixed_string<TChar, N - 1>;
+// template <typename TChar, size_t N>
+// basic_fixed_string(const TChar (&)[N]) -> basic_fixed_string<TChar, N - 1>;
 
 // Early GCC versions that support cNTTP were not able to deduce size_t parameter
 // of basic_fixed_string when fixed_string and other typedef were just type aliases.
